@@ -1,49 +1,51 @@
-
-import Box_black_box from './Components/Box_black_box';
-import Simple_element from './Components/Simple_element';
-
-const a = 5;
-const b = 6;
+import Circle from './Components/Circle';
 
 const data=[
-  {
-    ls: '2px',
-    boxColor: 'yellow',
-    boxNumber: 69
-  },
-  {
-    ls: '4px',
-    boxColor: 'cyan',
-    boxNumber: 33
-  },
-  {
-    ls: '6px',
-    boxColor: 'magenta',
-    boxNumber: 44
-  }
-]
-
-function App() {
-  return (
-    <>
-    
-      {data.map(box => <Box_black_box boxColor={box.boxColor} ls={box.ls} boxNumber={box.boxNumber}/>)}
-
-    <div>
+    {
+        circleColor: 'yellow',
+        circleNumber: 1
+    },
+    {
+        circleColor: 'cyan',
+        circleNumber: 2
+    },
+    {
+        circleColor: 'magenta',
+        circleNumber: 3,
+    },
+    {
+        circleColor: 'blue',
+        circleNumber: 4
+      },
+      {
+        circleColor: 'orange',
+        circleNumber: 5
+      },
+      {
+        circleColor: 'gray',
+        circleNumber: 6
+      },
+      {
+        circleColor: 'pink',
+        circleNumber: 7
+      },
+      {
+        circleColor: 'brown',
+        circleNumber: 8
+      },
         
-    sveikas
-
-    </div>  
-
-      <i>labas</i>
-
-      {Simple_element}
+  ]
+  
+  function App() {
+    return (
+      <>
       
-      {Simple_element, a + b}
-    
-    </> 
-
-  ); 
-}
-
-export default App;
+        {data.map(circle => <Circle circleColor={circle.circleColor} circleNumber={circle.circleNumber}/>)}
+   
+      </> 
+  
+    ); 
+  }
+  
+  export default App;
+  
