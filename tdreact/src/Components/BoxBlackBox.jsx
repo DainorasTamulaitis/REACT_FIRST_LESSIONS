@@ -1,4 +1,4 @@
-  function Box_black_box({ls, boxColor, boxNumber}) { 
+  function BoxBlackBox({ls, boxColor, boxNumber}) { 
 
     return (
       <>
@@ -16,4 +16,4 @@
     )
   }
 
-  export default Box_black_box;
+  export default BoxBlackBox;

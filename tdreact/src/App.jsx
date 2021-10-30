@@ -1,51 +1,15 @@
-import Circle from './Components/Circle';
+import BlueBoxWithButton from "./Components/BlueBoxWithButton";
+import RedCircleWithButton from "./Components/RedCircleWithButton";
 
-const data=[
-    {
-        circleColor: 'yellow',
-        circleNumber: 1
-    },
-    {
-        circleColor: 'cyan',
-        circleNumber: 2
-    },
-    {
-        circleColor: 'magenta',
-        circleNumber: 3,
-    },
-    {
-        circleColor: 'blue',
-        circleNumber: 4
-      },
-      {
-        circleColor: 'orange',
-        circleNumber: 5
-      },
-      {
-        circleColor: 'gray',
-        circleNumber: 6
-      },
-      {
-        circleColor: 'pink',
-        circleNumber: 7
-      },
-      {
-        circleColor: 'brown',
-        circleNumber: 8
-      },
-        
-  ]
-  
-  function App() {
+function App() {
     return (
-      <>
-      
-        {data.map(circle => <Circle circleColor={circle.circleColor} circleNumber={circle.circleNumber}/>)}
-   
-      </> 
-  
+      <div>
+         <BlueBoxWithButton buttonText={'S P A U S T I'}/>
+        <BlueBoxWithButton buttonText={'S T U M T I'}/>
+        <RedCircleWithButton color={'pink'} buttonText={'S P A U S T I'}/>
+        <RedCircleWithButton color={'yellow'} buttonText={'K E L T I'}/>
+      </div>
     ); 
   }
   
   export default App;
-  

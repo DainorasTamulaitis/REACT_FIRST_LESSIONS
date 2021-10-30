@@ -1,6 +1,6 @@
 
-import Box_black_box from './Components/Box_black_box';
-import Simple_element from './Components/Simple_element';
+import BoxBlackBox from './Components/BoxBlackBox';
+import SimpleElement from './Components/SimpleElement';
 
 const a = 5;
 const b = 6;
@@ -27,7 +27,7 @@ function App() {
   return (
     <>
     
-      {data.map(box => <Box_black_box boxColor={box.boxColor} ls={box.ls} boxNumber={box.boxNumber}/>)}
+      {data.map(box => <BoxBlackBox boxColor={box.boxColor} ls={box.ls} boxNumber={box.boxNumber}/>)}
 
     <div>
         
@@ -37,9 +37,9 @@ function App() {
 
       <i>labas</i>
 
-      {Simple_element}
+      {SimpleElement}
       
-      {Simple_element, a + b}
+      {SimpleElement, a + b}
     
     </> 
 
