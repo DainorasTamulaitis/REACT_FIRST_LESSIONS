@@ -1,7 +1,7 @@
 import BlueBoxWithButton from "./Components/BlueBoxWithButton";
 import RedCircleWithButton from "./Components/RedCircleWithButton";
 
-function App() {
+function AppRedCircleBlueBox() {
     return (
       <div>
          <BlueBoxWithButton buttonText={'S P A U S T I'}/>
@@ -12,4 +12,4 @@ function App() {
     ); 
   }
   
-  export default App;
+  export default AppRedCircleBlueBox;
