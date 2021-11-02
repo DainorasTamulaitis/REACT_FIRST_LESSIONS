@@ -1,19 +1,24 @@
-import Button1 from './Components/Button1';
-import Button2 from './Components/Button2';
-import Button3 from './Components/Button3';
-import Button4 from './Components/Button4';
+import axios from "axios";
+import { useEffect, useState } from "react";
+import ZooList from "./Components/ZooList";
+function App () {
 
-function App() {
-    return (
-      <div>
-      <Button1 buttonText={"Nr. 1"}/>
-      <Button2 buttonText={"Nr. 2"}/>
-      <Button3 buttonText={"Nr. 3"}/>
-      <Button4 buttonText={"Nr. 4"}/>
+    const [animals, setAnimals] = useState([]);
    
-      
-      </div>
-    ); 
-  }
-  
-  export default App;
+
+    useEffect(() => {
+        axios.get('http://localhost:3003/animals')
+        .then(res => {
+            setAnimals(res.data);
+            console.log(res.data);
+        })
+    }, [])
+
+    return (
+        <div className="zoo">
+            <ZooList animals={animals}></ZooList>
+        </div>
+    )
+}
+
+export default App;
